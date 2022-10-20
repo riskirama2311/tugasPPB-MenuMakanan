@@ -28,24 +28,24 @@ public class MainActivity extends AppCompatActivity {
 
     private void initData(){
         this.listKuliner = new ArrayList<>();
-        listKuliner.add(new Kuliner("Rendang",
-                                    "15.000",
-                                    "Rendang adalah masakan khas Minangkabau Sumatera Barat yang berbahan dasar daging. Bukan hanya daging sapi, bumbu rendang juga bisa diolah untuk bahan dasar lain, seperti kerbau, kambing, dan ayam.",
-                                    R.drawable.rendang));
+        listKuliner.add(new Kuliner("Nasi Goreng",
+                                    "12.000",
+                                    "Nasi Goreng, Timun dan Tomat, Telor.",
+                                    R.drawable.nasgor));
 
-        listKuliner.add(new Kuliner("Kalio",
-                "18.000",
-                "Kalio adalah sebutan dari rendang setengah jadi, yang masih berwarna kecoklatan dibanding rendang yang berwarna cokelat kehitaman. Kalio bertekstur lengket dan basah dengan aroma karamel yang kuat, sementara rendang lebih kering, bertekstur kasar, dan mengeluarkan aroma rempah yang tajam.",
-                R.drawable.kalio));
+        listKuliner.add(new Kuliner("Nasi Ayam Bali",
+                "14.000",
+                "Nasi Ayam Bali menjadi best seller di Burjo ini.",
+                R.drawable.nasiayambali));
 
-        listKuliner.add(new Kuliner("Dendeng Batokok",
-                "20.000",
-                "Dendeng batokok adalah masakan khas Sumatra Barat dibuat dari irisan tipis dan lebar. Setelah daging sapi diiris tipis melebar, lalu dipukul-pukul dengan batu cobek supaya daging nya menjadi lembut. Kemudian makanan ini diberi cabai hijau yang diiris kasar.",
-                R.drawable.dendengbatok));
+        listKuliner.add(new Kuliner("Nasi Rames",
+                "10.000",
+                "Nasi, Telor bulat, Sambal, Mie, Kering tempe.",
+                R.drawable.nasirames));
 
-        listKuliner.add(new Kuliner("Gulai Tunjang",
-                "18.000",
-                "Gulai Tunjang atau banyak juga di perantauan yang bilang gulai kikil adalah salah satu menu masakan khas dari Sumatera Barat yang diolah dari kulit kaki sapi. Masakan yang satu ini sangat digemari karena rasanya yang sangat lezat dan perpaduan kuah santan gulai dan kikil yang lembut dan gurih bikin selalu ingin nambah makan nya.. ",
-                R.drawable.gulaitunjang));
+        listKuliner.add(new Kuliner("Es Teh",
+                "5.000",
+                "Es Teh Manis, semanis janjinya padamu. ",
+                R.drawable.esteh));
     }
 }

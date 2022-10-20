@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 public class Deskription extends AppCompatActivity {
 
-    ImageView imgFotoMakanan;
+    ImageView FotoMakanan;
     TextView txtNamaMakanan, txtDeskripsiMakanan, txtAlamatMakanan;
 
     @Override
@@ -16,7 +16,7 @@ public class Deskription extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_deskription);
 
-        imgFotoMakanan = findViewById(R.id.imgFotoMakanan);
+        FotoMakanan = findViewById(R.id.FotoMakanan);
         txtNamaMakanan = findViewById(R.id.txtNamaMakanan);
         txtDeskripsiMakanan = findViewById(R.id.txtDeskripsiMakanan);
         txtAlamatMakanan = findViewById(R.id.txtAlamatMakanan);
@@ -26,11 +26,11 @@ public class Deskription extends AppCompatActivity {
     }
 
     private void getIncomingExtra(){
-        if (getIntent().hasExtra("foto") && getIntent().hasExtra("nama_makanan") && getIntent().hasExtra("deskripsi") && getIntent().hasExtra("alamat_makanan")){
+        if (getIntent().hasExtra("foto_makanan") && getIntent().hasExtra("nama_makanan") && getIntent().hasExtra("deskripsi_makanan") && getIntent().hasExtra("alamat_makanan")){
 
-            int imgFoto = getIntent().getIntExtra("foto", 1);
+            int imgFoto = getIntent().getIntExtra("foto_makanan", 1);
             String txtNama = getIntent().getStringExtra("nama_makanan");
-            String txtDeskripsi = getIntent().getStringExtra("deskripsi");
+            String txtDeskripsi = getIntent().getStringExtra("deskripsi_makanan");
             String txtAlamat = getIntent().getStringExtra("alamat_makanan");
 
             setDataActivity(imgFoto, txtNama, txtDeskripsi, txtAlamat);
@@ -39,7 +39,7 @@ public class Deskription extends AppCompatActivity {
 
     private void setDataActivity(int imgFoto, String txtNama, String txtDeskripsi, String txtAlamat){
 
-        imgFotoMakanan.setImageResource(imgFoto);
+        FotoMakanan.setImageResource(imgFoto);
 
         txtNamaMakanan.setText(txtNama);
         txtDeskripsiMakanan.setText(txtDeskripsi);

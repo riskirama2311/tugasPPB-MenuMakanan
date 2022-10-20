@@ -49,9 +49,9 @@ public class KulinerAdapter extends RecyclerView.Adapter<KulinerAdapter.ViewHold
             public void onClick(View view) {
                 Intent intent = new Intent(holder.itemView.getContext(), Deskription.class);
 
-                intent.putExtra("foto", kuliner.getId_gambar());
+                intent.putExtra("foto_makanan", kuliner.getId_gambar());
                 intent.putExtra("nama_makanan", kuliner.getNama());
-                intent.putExtra("deskripsi", kuliner.getDeskripsi());
+                intent.putExtra("deskripsi_makanan", kuliner.getDeskripsi());
                 intent.putExtra("alamat_makanan", kuliner.getAlamat());
 
                 holder.itemView.getContext().startActivity(intent);
